@@ -1,0 +1,93 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-28T17:17:29.602Z",
+        "before": [
+          {
+            "result": {
+              "duration": 912300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2355021800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.beforeApi()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "TC03_Post_Request",
+        "description": "",
+        "id": "room-creation;tc03-post-request",
+        "after": [
+          {
+            "result": {
+              "duration": 1192248100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 580084000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sends post request for room data",
+            "match": {
+              "location": "stepdefinitions.api_stepdefinitions.RoomCreationStepDefs.user_sends_post_request_for_room_data()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153383400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets the room data and validates",
+            "match": {
+              "location": "stepdefinitions.api_stepdefinitions.RoomCreationStepDefs.user_gets_the_room_data_and_validates()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC03_Api"
+          }
+        ]
+      }
+    ],
+    "name": "Room Creation",
+    "description": "",
+    "id": "room-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api_room_create.feature",
+    "tags": [
+      {
+        "name": "@TC03_Api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
